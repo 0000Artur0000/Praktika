@@ -1,0 +1,23 @@
+﻿<Window x:Class="LoginPass.Main"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoginPass"
+        mc:Ignorable="d"
+        Title="Main" Height="600" Width="799" Closed="Window_Closed" MinWidth="800" MinHeight="600" Loaded="Window_Loaded">
+    <Grid Background="#FFB5D5CA">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid x:Name="MainGrid" Grid.Column="1"  Grid.Row="1" />
+
+    </Grid>
+</Window>
