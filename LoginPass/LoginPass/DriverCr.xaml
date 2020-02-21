@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:LoginPass"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800" Height="474" Width="660">
+             d:DesignHeight="450" d:DesignWidth="800" Height="474" Width="660" Loaded="UserControl_Loaded">
     <Grid Width="660" Height="474">
         <Label Content="GUID:" HorizontalAlignment="Left" Margin="40,22,0,0" VerticalAlignment="Top" Width="50" Height="18" Padding="0,0,0,-1" VerticalContentAlignment="Center"/>
         <Label Content="Фамилия:" HorizontalAlignment="Left" Margin="120,22,0,0" VerticalAlignment="Top" Width="160" Height="18" Padding="0,0,0,-1" VerticalContentAlignment="Center"/>
@@ -26,7 +26,7 @@
         <Label Content="Должность:" HorizontalAlignment="Left" Margin="40,226,0,0" VerticalAlignment="Top" Width="187" Height="18" Padding="0,0,0,-1" VerticalContentAlignment="Center"/>
         <Label Content="Мобильный телефон:" HorizontalAlignment="Left" Margin="262,226,0,0" VerticalAlignment="Top" Width="139" Height="18" Padding="0,0,0,-1" VerticalContentAlignment="Center"/>
         <Label Content="Email:" HorizontalAlignment="Left" Margin="436,226,0,0" VerticalAlignment="Top" Width="184" Height="18" Padding="0,0,0,-1" VerticalContentAlignment="Center"/>
-        <TextBox x:Name="q9" HorizontalAlignment="Left" Height="23" Margin="40,244,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="187" Background="#FFD1EEFC"/>
+        <TextBox x:Name="q9" HorizontalAlignment="Left" Height="23" Margin="40,244,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="187" Background="#FFD1EEFC" TextChanged="q9_TextChanged"/>
         <TextBox x:Name="q10" HorizontalAlignment="Left" Height="23" Margin="262,244,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="139" Background="#FFD1EEFC"/>
         <TextBox x:Name="q11" HorizontalAlignment="Left" Height="23" Margin="436,244,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="184" Background="#FFD1EEFC"/>
         <Label Content="Замечания:" HorizontalAlignment="Left" Margin="40,301,0,0" VerticalAlignment="Top" Width="347" Height="18" Padding="0,0,0,-1" VerticalContentAlignment="Center"/>
@@ -37,5 +37,6 @@
         <Rectangle Fill="#FFFFFCD6" HorizontalAlignment="Left" Height="120" Margin="530,319,0,0" VerticalAlignment="Top" Width="90" Panel.ZIndex="-1"/>
         <Button Content="Добавить водителя" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="96,413,172,10"  FontSize="22" UseLayoutRounding="False" Padding="30,10" Background="#FFFFFCD6" BorderBrush="#FFFFFCD6" Width="392" Click="Button_Click"/>
         <Polygon x:Name="trible" Points="0,25 40,0 40,50" Margin="40,413,579,10" Fill="#FFFFFCD6" />
+        <ComboBox x:Name="asdw" IsEditable="True" IsTextSearchEnabled="False" HorizontalAlignment="Left" Height="24" Margin="40,272,0,0" VerticalAlignment="Top" Width="187" TextInput="asdw_TextInput" Panel.ZIndex="-1" KeyUp="asdw_KeyUp"/>
     </Grid>
 </UserControl>

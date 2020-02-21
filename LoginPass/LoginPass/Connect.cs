@@ -11,8 +11,8 @@ namespace LoginPass
     {
         public static SqlConnectionStringBuilder jojo = new SqlConnectionStringBuilder()
         {
-            //jojo.DataSource = "303-2\\SQLEXPRESS";
-            DataSource = "DESKTOP-U5HC5KL",
+            DataSource = "303-2\\SQLEXPRESS",
+            //DataSource = "DESKTOP-U5HC5KL",
             InitialCatalog = "bd",
             IntegratedSecurity = true
         };
